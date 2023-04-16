@@ -1,0 +1,14 @@
+{
+    "name": "Search Results Opener",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "Open search results in new tabs",
+    "permissions": ["tabs", "activeTab", "scripting"],
+    "content_scripts": [{
+        "matches": ["https://www.linkedin.com/search/results/*"],
+        "js": ["content.js"]
+    }],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
